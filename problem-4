@@ -1,0 +1,15 @@
+type Light = "red" | "yellow" | "green";
+type TrafficAction = "Stop" | "Slow Down" | "Go";
+function getTrafficAction(light: Light): TrafficAction {
+    switch (light) {
+        case "red":
+            return "Stop";
+        case "yellow":
+            return "Slow Down";
+        case "green":
+            return "Go";
+    }
+}
+console.log(getTrafficAction("red"));  
+console.log(getTrafficAction("yellow")); 
+console.log(getTrafficAction("green"));  
