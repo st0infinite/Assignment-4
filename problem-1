@@ -1,0 +1,13 @@
+type BatteryStatus = "Low" | "Medium" | "High" | "Full";
+function getBatteryStatus(percentage: number): BatteryStatus {
+    if (percentage <= 20) {
+        return "Low";
+    }
+    if (percentage <= 50) {
+        return "Medium";
+    }
+    if (percentage <= 90) {
+        return "High";
+    }
+    return "Full";
+}
